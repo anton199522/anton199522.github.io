@@ -576,7 +576,9 @@ footer p{
 }
 
 @media all and (max-width: 500px){
-	
+	.logo{
+		font-size: 50px;
+	}
 	.block-one{
 		margin-bottom: 50px;
 		margin-right: 0;
@@ -591,9 +593,7 @@ footer p{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
-	.block-flex, .partners-flex{
-		flex-direction: column;
-	}
+	
 
 	
 	.block-one{
@@ -618,6 +618,7 @@ footer p{
 		flex-wrap: wrap;
 
 	}
+
 	.contact-flex,.contact-flex2,.contact-flex3,.message{
 		float: left;
 		padding:0;
