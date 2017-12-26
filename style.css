@@ -23,7 +23,7 @@ header{
 	float: left;
 	margin-right: 36.3%;
 	color: white;
-	font-size: 1.5vw;
+	font-size: 38px;
 	font-weight: bold;
 	font-family: 'Roboto Slab';
 }
@@ -31,12 +31,14 @@ header{
 nav ul li{
 	line-height: 24px;
 	margin-right: 35px;
+
 }
 nav ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
 	list-style: none;
+
 }
 nav ul li a{
 	text-decoration: none;
@@ -213,6 +215,7 @@ hr{
 	width: 100%;
 	margin-bottom: 70px;
 }
+
 .about p a{
 	text-decoration: none;
 	color: #555555;
@@ -460,8 +463,10 @@ hr{
 	min-height: 660px;
 }
 .contact{
+
 	display: inline-block;
 	float: left;
+	width: 20.6222%;
 }
 .fa{
 	color: #555555;
@@ -487,44 +492,45 @@ hr{
 }
 
 /*--------------FORM------------*/
+
+.form{
+	float: right;
+	width: 64.88888%;
+}
 .contact-flex,.contact-flex2,.contact-flex3{
-	padding-left: 160px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 }
-#text,#text2,#txt3{
-    flex: 1;
-	margin-right: 30px;
+#email, #name,#your-subject,#company-name{
 	height: 43px;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-family: 'Roboto Slab';
-	padding-left: 18px;
-	color: #555555;
-	border: 1px solid #555555;
+	width: 47.95%;
+	min-width: 250px;
 	margin-bottom: 20px;
+	text-transform: uppercase;
+	padding-left: 15px;
 }
-.company,.email{
-	margin-right: 0px !important;
-}
-#txt3{
-	min-height:100px; 
-	margin-right: 0px;
+#write{
+	height: 100px;
+	width: 100%;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	padding-left: 15px;
 }
 .message{
-	margin-left: 160px;
-	border: 1px solid #555555;
-	width: 100%;
-	max-width: 169px;
-	height: 43px;
-	display: inline-block;
-	background: #fff;
-	text-transform: uppercase;
 	
+	display: flex;
+	justify-content: space-between;
 }
-.message a{
+.sent-message{
+	height: 43px;
+	width: 23.2876%;
+	min-width: 150px;
+	border: 1px solid #555555;
+}
+.sent-message a{
+	text-transform: uppercase;
 	display: block;	
 	line-height: 43px;
 	text-align: center;
@@ -533,8 +539,10 @@ hr{
 	font-family: 'Roboto Slab';
 	color: #555555;
 }
-
-
+.content_7-flex{
+	display: flex;
+		justify-content: space-between;
+}
 /*-------------FOOTER----------*/
 footer{
 	position: relative;
@@ -575,9 +583,84 @@ footer p{
 	font-family: 'Roboto Slab';
 }
 
-@media all and (max-width: 500px){
-	.logo{
-		font-size: 50px;
+
+
+
+
+@media all and (max-width: 425px){
+	.content_1{
+		margin-bottom: 0 !important;
+	}
+	.content_2{
+		min-height: 1100px ;
+	}
+		.partners-flex .one img {
+	    margin-right: 10px;
+	}
+		.container .talk{
+	
+		font-size: 20px;
+		
+	}
+	.txt-flex{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.txt-flex #txt-about, .txt-flex #txt3-about{
+		width: 100% !important;
+	}
+	.container{
+		width: 90%;
+	}
+	header .logo{
+
+		font-size: 24px;
+		margin-left: 10px;
+	}
+	
+	.block-flex{
+		flex-direction: column;
+	}
+	nav{
+		display: none;
+
+	}
+	header{
+		padding-bottom: 100px;
+		height: unset;
+	}
+	.startup{
+		display: flex;
+		flex-direction: column;
+	}
+	.startup #image, .startup #image2{
+		width: 100% !important;
+		margin-bottom: 25px;
+	}
+	.filter-flex p a{
+	display: flex;
+	justify-content: center;
+}
+	
+	.about p a{
+		margin: 0;
+	}
+	#email, #name,#your-subject,#company-name{
+	
+	}
+	.contact-flex3 #write{
+		flex: 1;
+		min-width: 250px;
+	}
+	.content_7{
+		height: 1125px;
+	}
+	.content_7-flex{
+
+		flex-direction: column;
+	}
+	.contact,.form{
+		margin: 0 auto;
 	}
 	.block-one{
 		margin-bottom: 50px;
@@ -603,46 +686,75 @@ footer p{
 		display: none;
 
 	}
-	header{
-		height: 480px;
-	}
+	
 	.welcome{
+
 		margin-top: 150px;
+	}
+	.welcome #txt1{
+		font-size: 24px;
 	}
 	.services{
 		padding-top: 50px;
 	}
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 768px ){
+
+	footer{
+		min-height: 206px;
+	}
+	#write{
+		flex: 0.91;
+	}
+	.logo{
+		font-size: 3vw;
+	}
+	.content_1,.content_5{
+		margin-bottom: 70px;
+	}
+	.about{
+		padding-top: 70px;
+	}
+	.partners-flex .two img,.partners-flex .four img {
+		margin-right: 0;
+	}
+	.partners-flex .five img{
+		margin: 0 30px 0 30px;
+	}
+
 	.partners-flex{
 		flex-wrap: wrap;
-
 	}
 
-	.contact-flex,.contact-flex2,.contact-flex3,.message{
-		float: left;
-		padding:0;
+	.welcome{
+		margin-top: 250px;
 	}
-	.content_7{
-		min-height: 900px;
-	}
+	
 	nav{
 		display: none;
 
 	}
+	.twitter{
+		padding-top: 50px;
+	}
 	
 }
-@media all and (max-width: 1024px){
+@media all and (max-width: 1024px ){
 	
 	.logo{
 		margin-right: 20%;
 	}
-	.contact-flex #text,.contact-flex2 #text2{
-		margin-right: 0;
+	.contact, .form{
+		width: 50%;
 	}
-	.message{
-	margin-left: 386px;
+	.contact-flex,.contact-flex2,.contact-flex3,.message{
+		justify-content: center;
 	}
+	#write{
+		width: 69%;
+	}
+
+
 	.content_7{
 		min-height: 720px;
 	}
@@ -683,6 +795,11 @@ footer p{
 	.content_6{
 		padding-bottom: 50px;
 	}
+	.welcome{
+		margin-top: 160px;
+	}
+	
 }
+
 
 
