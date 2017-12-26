@@ -21,7 +21,7 @@ header{
 .logo{
 	
 	float: left;
-	margin-right: 36.3%;
+	margin-right: 32.3%;
 	color: white;
 	font-size: 38px;
 	font-weight: bold;
@@ -29,7 +29,7 @@ header{
 }
 
 nav ul li{
-	line-height: 24px;
+	line-height: 51px;
 	margin-right: 35px;
 
 }
